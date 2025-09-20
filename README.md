@@ -50,8 +50,15 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-### 3. Run the server
+### 3. Install the dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the server
 ```bash
 uvicorn main:app --reload
 ```
 The service will be available in `http://127.0.0.1:8000`.
+
+The API docs will be available in `http://127.0.0.1:8000/docs`.
